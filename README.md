@@ -43,6 +43,9 @@ You can chain it with the exact same methods used in the `past` function:
 All methods returns a `Carbon\Carbon` instance, which means you will still be able 
 to use all the `Carbon` methods.
 
+## Test
+To test this package, run `composer test`
+
 ## Contributing
 Thanks for considering contributing for this package! The contribution guide can be found [here][contributing].
 
