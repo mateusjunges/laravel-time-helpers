@@ -1,10 +1,10 @@
 <?php
 
-use Junges\TimeHelpers\TimeHelpers;
+use Junges\TimeHelpers\TimeHelper;
 
 if (!function_exists('in')) {
     function in(int $time)
     {
-        return (new TimeHelpers())->new($time);
+        return (new TimeHelper())->new($time);
     }
 }
