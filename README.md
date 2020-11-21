@@ -24,6 +24,7 @@ The `past` function, as the time suggests, returns a time in the past.
 
 You can use it and chain with the following methods:
 
+- `past(10)->seconds()`: Returns a Carbon instance 10 seconds in the past
 - `past(10)->minutes()`: Returns a Carbon instance 10 minutes in the past
 - `past(10)->hours()`: Returns a Carbon instance 10 hours in the past
 - `past(10)->weeks()`: Returns a Carbon instance 10 weeks in the past
@@ -39,6 +40,7 @@ The `in` function can be used to get a Carbon instance in the future.
 
 You can chain it with the exact same methods used in the `past` function:
 
+- `in(10)->seconds()`: Returns a Carbon instance 10 seconds in the future
 - `in(10)->minutes()`: Returns a Carbon instance 10 minutes in the future
 - `in(10)->hours()`: Returns a Carbon instance 10 hours in the future
 - `in(10)->weeks()`: Returns a Carbon instance 10 weeks in the future
