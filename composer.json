@@ -1,0 +1,22 @@
+{
+    "name": "mateusjunges/laravel-time-helpers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateus Junges",
+            "email": "mateus@junges.dev"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Junges\\TimeHelpers\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
