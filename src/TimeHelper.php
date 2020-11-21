@@ -2,13 +2,13 @@
 
 namespace Junges\TimeHelpers;
 
+use Carbon\Carbon;
 use Closure;
-use Carbon\Traits\Date;
 
 class TimeHelper
 {
     public int $time;
-    public $generated_time;
+    public Carbon $generated_time;
     public string $tz;
 
     public function __construct($tz = null)
@@ -27,56 +27,56 @@ class TimeHelper
 
     public function minutes()
     {
-        $this->generated_time = Date::now($this->tz)->addMinutes($this->time);
+        $this->generated_time = now($this->tz)->addMinutes($this->time);
 
         return $this->generated_time;
     }
 
     public function hours()
     {
-        $this->generated_time = Date::now($this->tz)->addHours($this->time);
+        $this->generated_time = now($this->tz)->addHours($this->time);
 
         return $this->generated_time;
     }
 
     public function days()
     {
-        $this->generated_time = Date::now($this->tz)->addDays($this->time);
+        $this->generated_time = now($this->tz)->addDays($this->time);
 
         return $this->generated_time;
     }
 
     public function weeks()
     {
-        $this->generated_time = Date::now($this->tz)->addWeeks($this->time);
+        $this->generated_time = now($this->tz)->addWeeks($this->time);
 
         return $this->generated_time;
     }
 
     public function weekDays()
     {
-        $this->generated_time = Date::now($this->tz)->addWeekdays($this->time);
+        $this->generated_time = now($this->tz)->addWeekdays($this->time);
 
         return $this->generated_time;
     }
 
     public function months()
     {
-        $this->generated_time = Date::now($this->tz)->addMonths($this->time);
+        $this->generated_time = now($this->tz)->addMonths($this->time);
 
         return $this->generated_time;
     }
 
     public function years()
     {
-        $this->generated_time = Date::now($this->tz)->addYears($this->time);
+        $this->generated_time = now($this->tz)->addYears($this->time);
 
         return $this->generated_time;
     }
 
     public function centuries()
     {
-        $this->generated_time = Date::now($this->tz)->addCenturies($this->time);
+        $this->generated_time = now($this->tz)->addCenturies($this->time);
 
         return $this->generated_time;
     }
