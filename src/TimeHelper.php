@@ -8,7 +8,6 @@ use Junges\TimeHelpers\Exceptions\InvalidTimeOperationMethodException;
 class TimeHelper
 {
     public int $time;
-    public Carbon $generated_time;
     public string $tz;
     private string $method;
 
