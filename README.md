@@ -58,8 +58,9 @@ The Laravel Time Helper package is open-sourced software licensed under the [MIT
 for more information.
 
 
-[mit]: as
-[license-file]: license
+[mit]: https://opensource.org/licenses/MIT
+[license-file]: https://github.com/mateusjunges/laravel-time-helpers/blob/master/LICENSE
 [twitter]: https://twitter.com/mateusjungess
-[changelog]: a
-[contributing]: a
+[changelog]: https://github.com/mateusjunges/laravel-time-helpers/blob/master/CHANGELOG.md
+[contributing]: https://github.com/mateusjunges/laravel-time-helpers/blob/master/.github/CONTRIBUTING.md
+[code-of-conduct]: https://github.com/mateusjunges/laravel-time-helpers/blob/master/.github/CODE_OF_CONDUCT.md
