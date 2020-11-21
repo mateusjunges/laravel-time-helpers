@@ -1,5 +1,8 @@
 # Laravel Time Helpers
 ![Laravel time helpers logo](docs/Laravel-Time-Helpers.png)
+
+![](https://github.com/mateusjunges/laravel-time-helpers/workflows/Continuous%20Integration/badge.svg)
+
 This package provides two simple helpers to deal with time.
 
 ## Installation
