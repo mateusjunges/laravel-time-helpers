@@ -2,13 +2,13 @@
 
 namespace Junges\TimeHelpers;
 
-use Carbon\Carbon;
 use Closure;
+use Carbon\Traits\Date;
 
 class TimeHelper
 {
     public int $time;
-    public Carbon $generated_time;
+    public $generated_time;
     public string $tz;
 
     public function __construct($tz = null)
