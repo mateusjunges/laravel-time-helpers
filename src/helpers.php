@@ -8,10 +8,3 @@ if (!function_exists('in')) {
         return (new TimeHelpers())->new($time);
     }
 }
-
-if (!function_exists('after')) {
-    function after(int $time)
-    {
-        return (new TimeHelpers())->new($time);
-    }
-}
