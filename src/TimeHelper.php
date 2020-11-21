@@ -80,11 +80,4 @@ class TimeHelper
 
         return $this->generated_time;
     }
-
-    public function then(Closure $closure)
-    {
-        time_sleep_until($this->generated_time->timestamp);
-
-        return $closure();
-    }
 }
