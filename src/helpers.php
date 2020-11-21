@@ -9,7 +9,7 @@ if (!function_exists('in')) {
      * @return TimeHelper
      * @throws \Junges\TimeHelpers\Exceptions\InvalidTimeOperationMethodException
      */
-    function in(int $time, string $timezone)
+    function in(int $time, string $timezone = null)
     {
         return (new TimeHelper('add', $timezone))->new($time);
     }
@@ -22,7 +22,7 @@ if (! function_exists('past')) {
      * @return TimeHelper
      * @throws \Junges\TimeHelpers\Exceptions\InvalidTimeOperationMethodException
      */
-    function past(int $time, string $timezone)
+    function past(int $time, string $timezone = null)
     {
         return (new TimeHelper('sub', $timezone))->new($time);
     }
