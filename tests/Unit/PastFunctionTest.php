@@ -7,6 +7,13 @@ use Junges\TimeHelpers\Tests\TestCase;
 
 class PastFunctionTest extends TestCase
 {
+    public function test_seconds_returns_a_time_in_the_past()
+    {
+        $time = past(10)->seconds();
+
+        $this->assertTrue($time->lessThan(now()));
+    }
+
     public function test_minutes_returns_a_time_in_the_past()
     {
         $time = past(10)->minutes();

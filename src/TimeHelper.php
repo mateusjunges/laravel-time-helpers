@@ -39,6 +39,11 @@ class TimeHelper
         return $this;
     }
 
+    public function seconds(): Carbon
+    {
+        return now($this->tz)->{"{$this->method}Seconds"}($this->time);
+    }
+
     public function minutes(): Carbon
     {
         return now($this->tz)->{"{$this->method}Minutes"}($this->time);
