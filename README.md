@@ -1,5 +1,5 @@
 # Laravel Time Helpers
-
+![Laravel time helpers logo](docs/Laravel-Time-Helpers.png)
 This package provides two simple helpers to deal with time.
 
 ## Installation
