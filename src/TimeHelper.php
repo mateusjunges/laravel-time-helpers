@@ -3,7 +3,6 @@
 namespace Junges\TimeHelpers;
 
 use Carbon\Carbon;
-use Closure;
 
 class TimeHelper
 {
