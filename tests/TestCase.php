@@ -17,7 +17,7 @@ class TestCase extends Orchestra
     public function getPackageProviders($app)
     {
         return [
-            TimeHelperServiceProvider::class
+            TimeHelperServiceProvider::class,
         ];
     }
 
