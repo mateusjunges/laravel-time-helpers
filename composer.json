@@ -27,6 +27,11 @@
             "src/helpers.php"
         ]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Junges\\TimeHelpers\\Tests\\": "tests/"
+        }
+    },
     "extra": {
         "laravel": {
             "providers": [
@@ -35,13 +40,9 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.3.10",
-        "nunomaduro/collision": "^5.0",
-        "pestphp/pest": "^0.3.12",
-        "pestphp/pest-plugin-laravel": "^0.3.0",
         "orchestra/testbench": "^6.4"
     },
     "scripts": {
-        "test": "./vendor/bin/pest"
+        "test": "./vendor/bin/phpunit"
     }
 }
