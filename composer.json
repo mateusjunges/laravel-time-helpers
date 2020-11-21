@@ -18,5 +18,12 @@
         "files": [
             "src/helpers.php"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Junges\\TimeHelpers\\Providers\\TimeHelperServiceProvider"
+            ]
+        }
     }
 }
