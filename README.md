@@ -1,8 +1,11 @@
 # Laravel Time Helpers
 ![Laravel time helpers logo](docs/Laravel-Time-Helpers.png)
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mateusjunges/laravel-time-helpers.svg?style=flat)](https://packagist.org/packages/mateusjunges/laravel-time-helpers)
+[![Total Downloads](https://img.shields.io/packagist/dt/mateusjunges/laravel-time-helpers.svg?style=flat)](https://packagist.org/packages/mateusjunges/laravel-time-helpers)
 ![](https://github.com/mateusjunges/laravel-time-helpers/workflows/Continuous%20Integration/badge.svg)
-
+[![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE.md)
+[![StyleCI](https://styleci.io/repos/314837569/shield)](https://styleci.io/repos/314837569)
 This package provides two simple helpers to deal with time.
 
 ## Installation
