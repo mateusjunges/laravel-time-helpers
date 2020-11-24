@@ -5,7 +5,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/mateusjunges/laravel-time-helpers.svg?style=flat)](https://packagist.org/packages/mateusjunges/laravel-time-helpers)
 ![](https://github.com/mateusjunges/laravel-time-helpers/workflows/Continuous%20Integration/badge.svg)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE.md)
-[![StyleCI](https://styleci.io/repos/314837569/shield)](https://styleci.io/repos/314837569)
+[![StyleCI](https://styleci.io/repos/314837569/shield?style=flat)](https://styleci.io/repos/314837569)
 
 This package provides two simple helpers to deal with time.
 
