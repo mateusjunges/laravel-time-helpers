@@ -9,7 +9,7 @@ class TimeHelper
 {
     const ADD_TIME = 'add';
     const SUB_TIME = 'sub';
-    
+
     public int $time;
     public string $tz;
     private string $method;
