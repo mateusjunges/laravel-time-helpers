@@ -13,7 +13,7 @@ if (!function_exists('in')) {
      */
     function in(int $time, string $timezone = null)
     {
-        return (new TimeHelper('add', $timezone))->new($time);
+        return (new TimeHelper(TimeHelper::ADD_TIME, $timezone))->new($time);
     }
 }
 
@@ -28,6 +28,6 @@ if (!function_exists('past')) {
      */
     function past(int $time, string $timezone = null)
     {
-        return (new TimeHelper('sub', $timezone))->new($time);
+        return (new TimeHelper(TimeHelper::SUB_TIME, $timezone))->new($time);
     }
 }
