@@ -7,6 +7,9 @@ use Junges\TimeHelpers\Exceptions\InvalidTimeOperationMethodException;
 
 class TimeHelper
 {
+    const ADD_TIME = 'add';
+    const SUB_TIME = 'sub';
+
     public int $time;
     public string $tz;
     private string $method;
@@ -25,7 +28,7 @@ class TimeHelper
             $this->tz = config('app.timezone');
         }
 
-        if (!in_array($method, ['add', 'sub'])) {
+        if (!in_array($method, [self::ADD_TIME, self::SUB_TIME])) {
             throw InvalidTimeOperationMethodException::methodNotListed($method);
         }
 
