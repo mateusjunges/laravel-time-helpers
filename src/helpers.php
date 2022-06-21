@@ -4,8 +4,8 @@ use Junges\TimeHelpers\TimeHelper;
 
 if (!function_exists('in')) {
     /**
-     * @param int    $time
-     * @param string $timezone
+     * @param int         $time
+     * @param string|null $timezone
      *
      * @throws \Junges\TimeHelpers\Exceptions\InvalidTimeOperationMethodException
      *
@@ -19,8 +19,8 @@ if (!function_exists('in')) {
 
 if (!function_exists('past')) {
     /**
-     * @param int    $time
-     * @param string $timezone
+     * @param int         $time
+     * @param string|null $timezone
      *
      * @throws \Junges\TimeHelpers\Exceptions\InvalidTimeOperationMethodException
      *

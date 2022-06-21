@@ -8,14 +8,17 @@ jobs:
 
     strategy:
       matrix:
-        php: [7.4]
-        laravel: [8.*, 7.*]
+        php: [8.0, 8.1]
+        laravel: [9.*, 8.*]
         dependency-version: [prefer-stable, prefer-lowest]
         include:
           - laravel: 8.*
             testbench: 6.*
-          - laravel: 7.*
-            testbench: 5.*
+          - laravel: 9.*
+            testbench: 7.*
+        exclude:
+          - laravel: 8.*
+            dependency-version: prefer-lowest
 
     name: CI - PHP ${{ matrix.php }}  - Laravel ${{ matrix.laravel }} - Testbench ${{ matrix.testbench }} (${{ matrix.dependency-version }})
 
@@ -24,18 +27,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Cache dependencies
-      uses: actions/cache@v1
-      with:
-        path: ~/.composer/cache/files
-        key: dependencies-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
-
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php }}
         extensions: mbstring, zip
-        tools: prestissimo
+        tools: phpunit
         coverage: pcov
 
     - name: Install Composer dependencies
