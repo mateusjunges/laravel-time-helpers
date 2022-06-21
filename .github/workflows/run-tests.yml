@@ -16,6 +16,9 @@ jobs:
             testbench: 6.*
           - laravel: 9.*
             testbench: 7.*
+        exclude:
+          - laravel: 8.*
+            dependency-version: prefer-lowest
 
     name: CI - PHP ${{ matrix.php }}  - Laravel ${{ matrix.laravel }} - Testbench ${{ matrix.testbench }} (${{ matrix.dependency-version }})
 
