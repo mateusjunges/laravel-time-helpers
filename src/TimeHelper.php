@@ -11,28 +11,26 @@ class TimeHelper
     const SUB_TIME = 'sub';
 
     public int $time;
-    public string $tz;
-    private string $method;
 
     /**
      * TimeHelper constructor.
      *
-     * @param string      $method
-     * @param string|null $tz
+     * @param string       $method
+     * @param string|null  $tz
      *
      * @throws InvalidTimeOperationMethodException
      */
-    public function __construct(string $method, string $tz = null)
-    {
-        if (is_null($tz)) {
+    public function __construct(
+        private string $method,
+        public ?string $tz = null
+    ){
+        if ($tz == null) {
             $this->tz = config('app.timezone');
         }
 
         if (!in_array($method, [self::ADD_TIME, self::SUB_TIME])) {
             throw InvalidTimeOperationMethodException::methodNotListed($method);
         }
-
-        $this->method = $method;
     }
 
     public function new(int $time): self
