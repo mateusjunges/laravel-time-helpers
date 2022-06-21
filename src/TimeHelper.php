@@ -15,15 +15,15 @@ class TimeHelper
     /**
      * TimeHelper constructor.
      *
-     * @param string       $method
-     * @param string|null  $tz
+     * @param string      $method
+     * @param string|null $tz
      *
      * @throws InvalidTimeOperationMethodException
      */
     public function __construct(
         private string $method,
         public ?string $tz = null
-    ){
+    ) {
         if ($tz == null) {
             $this->tz = config('app.timezone');
         }
